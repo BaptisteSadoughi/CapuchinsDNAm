@@ -127,19 +127,8 @@ hcl <- hclust(as.dist(1 - SimMatSel), method = "average")
 # reminder the heatmap display the columns in the order of
 levels(bins_pos) #unchanged, up
 
-# Add dummy second column to force ncol == nlevels(bin)
-ME_workaround <- ME_pos[, c("unchanged", "up"), drop = FALSE]
-
-# Replace all values in the dummy "unchanged" column with NA
-for (assay_name in assayNames(ME_workaround)) {
-  assay(ME_workaround, assay_name)[, "unchanged"] <- NA
-}
-
-# Set bin column explicitly
-colData(ME_workaround)$bin <- factor(c("unchanged", "up"), levels = c("unchanged", "up"))
-
 plotMotifHeatmaps(
-  x = ME_workaround[sel_pos,],
+  x = ME_pos[sel_pos,],
   which.plots = c("log2enr", "negLog10Padj"), 
   width = 1.8, maxEnr = 2, maxSig = 10,
   cluster = hcl,
@@ -148,7 +137,6 @@ plotMotifHeatmaps(
   show_motif_GC = FALSE,
   width.seqlogo = 1.2
 )
-dev.off()
 
 # ##### DMR losing methylation with age
 
