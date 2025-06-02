@@ -8,9 +8,6 @@ rm(list = ls())
 library_list <- c("tidyverse","stringr","comethyl","GenomicRanges","bsseq","ggpubr","emmeans")
 lapply(library_list, require, character.only=TRUE)
 
-setwd("/home/sbaptis7/Capuchins_feces_DNA/")
-
-
 ##### Data Prep
 #####
 {
