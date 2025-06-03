@@ -5,7 +5,7 @@
 
 This repository contains the scripts used to analyze DNA methylation profiles measured from blood, fecal, and urine samples in two species of capuchin monkeys.
 
-Note that all steps were performed on the Arizona State University SOL higher-performance computing clusters. We have used R version 4.4.0 in the RStudio interface.
+Note that all steps were performed on the Arizona State University SOL higher-performance computing cluster. We have used R version 4.4.0 in the RStudio interface.
 The first processing steps of raw fastq files were performed using a bash shell, with required software and binaries in the PATH. Versions for softwares used in the shell
 environment are specified in the corresponding scripts. We did our best to keep R packages up-to-date until the end of the analysis in May 2025.
 
