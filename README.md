@@ -51,5 +51,5 @@ Update paths to the results of the differential methylation analysis.<br />
 Update output paths for the age-associated DMRs and the set of background DMRs.<br />
 
 **11. TFBS_analysis.R**<br />
-Update put paths to the age-associated DMRs and the set of background DMRs in the script.<br />
+Update paths to the age-associated DMRs and the set of background DMRs in the script.<br />
 Update path to the C.imitator whole genome Cebus_imitator.Cebus_imitator-1.0.dna.toplevel.fa.<br />
