@@ -12,7 +12,7 @@ environment are specified in the corresponding scripts. We did our best to keep 
 Below we detail the steps to reproduce the results presented in the associated manuscript. When relevant, we highlight the need to define the paths to external files. Note that some scripts require to source the script Functions_intersect_bsseq.R in order to use the functions.
 
 **1. Bioinformatic_processing.sh**<br />
-Download raw fastq files and indicate paths the data /path/to/fastq. A manifest file listing all library names should be stored in the same folder /path/to/fastq/manifest.txt. Update path.<br />
+Download raw fastq files and indicate the path to the data /path/to/fastq. A manifest file listing all library names should be stored in the same folder /path/to/fastq/manifest.txt. Update path.<br />
 Download the C.imitator whole genome Cebus_imitator.Cebus_imitator-1.0.dna.toplevel.fa. Update path.<br />
 
 **2. Assembling_bsseq.R**<br />
