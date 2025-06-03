@@ -252,7 +252,7 @@ top_genes <- overlap_data_panmamm %>%
 overlap_data_panmamm <- overlap_data_panmamm %>% 
   left_join(top_genes %>% dplyr::select(Gene,beta) %>% mutate(label = Gene), by = c("Gene", "beta"))
 
-Fig. 4A
+#Fig. 4A
 ggplot(overlap_data_panmamm %>% mutate(alpha=ifelse(qval<0.1,"sig","nonsig")),
        aes(x=beta,y=-log10(qval), color=alpha, alpha=alpha))+
   geom_point(shape=21,fill=NA)+
